@@ -1,0 +1,48 @@
+description: Данные личности владельца кошельков
+type: object
+required:
+  - name
+  - provider
+  - class
+properties:
+  id:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityID'
+  name:
+    description: |
+      Человекочитаемое имя личности владельца, по которому его легко опознать
+    type: string
+    example: Keyn Fawkes
+  createdAt:
+    description: Дата и время создания личности владельца
+    type: string
+    format: date-time
+
+  provider:
+    x-rebillyMerge:
+      - $ref: '#/definitions/Provider'
+  class:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityClass'
+  level:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityLevel'
+  effectiveChallenge:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityChallenge'
+      - description: |
+          Идентификатор успешно пройденной процедура идентификации, результат которой действителен на
+          текущий момент
+
+  isBlocked:
+    description: Заблокирована ли личность владельца?
+    type: boolean
+
+    example: false
+  metadata:
+    description: |
+      Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
+      данной личностью владельца
+    type: object
+    example:
+      lkDisplayName: Серёга на созвоне

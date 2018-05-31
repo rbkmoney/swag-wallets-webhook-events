@@ -1,0 +1,20 @@
+description: Данные провайдера услуг
+type: object
+required:
+  - id
+  - name
+  - residence
+properties:
+  id:
+    x-rebillyMerge:
+      - $ref: '#/definitions/ProviderID'
+  name:
+    description: |
+      Человекочитаемое наименование провайдера услуг
+    type: string
+    example: НКО «ЭПС»
+  residence:
+    x-rebillyMerge:
+      - $ref: '#/definitions/Residence'
+      - description: |
+          Резиденция, в которой провайдер предоставляет услуги

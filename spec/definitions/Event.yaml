@@ -1,0 +1,28 @@
+description: Данные события
+type: object
+discriminator: eventType
+required:
+  - eventID
+  - occuredAt
+  - topic
+  - eventType
+properties:
+  eventID:
+    description: Идентификатор события в системе
+    type: integer
+  occuredAt:
+    description: Дата и время возникновения события
+    type: string
+    format: date-time
+  topic:
+    description: Предмет оповещения
+    type: string
+    enum:
+      - WalletsTopic
+  eventType:
+    type: string
+    description: Тип произошедшего с предметом оповещения события
+    enum:
+      - WalletWithdrawalStarted
+      - WalletWithdrawalSucceeded
+      - WalletWithdrawalFailed
