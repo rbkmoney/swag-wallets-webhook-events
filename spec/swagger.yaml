@@ -9,7 +9,7 @@ info:
     url: 'https://api.rbk.money'
   description: |
 
-    ## Wallets Webhooks Events API
+    ## Wallet Webhook Events API
 
     Данная спецификация определяет протокол доставки оповещений о возникновении
     новых событий по кошелькам в рамках вашей организации, которые платформа доставляет в

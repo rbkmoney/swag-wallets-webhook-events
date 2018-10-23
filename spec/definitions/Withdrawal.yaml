@@ -16,28 +16,10 @@ allOf:
 
       wallet:
         x-rebillyMerge:
-          - $ref: '#/definitions/Wallet'
-      walletGrant:
-        x-rebillyMerge:
-          - description: |
-              Токен, дающий право на списание с кошелька для оплаты вывода.
-
-              Необходимо предоставить в том случае, если оплата производится засчёт средств _чужого_
-              кошелька. Владелец указанного кошелька может
-              [выдать на это право](#operation/issueWalletGrant).
-          - $ref: '#/definitions/GrantToken'
+          - $ref: '#/definitions/WalletID'
       destination:
         x-rebillyMerge:
-          - $ref: '#/definitions/Destination'
-      destinationGrant:
-        x-rebillyMerge:
-          - description: |
-              Токен, дающий право вывода.
-
-              Необходимо предоставить в том случае, если вывод производится посредством _чужого_ приёмника
-              средств. Владелец указанного приёмника может
-              [выдать на это право](#operation/issueDestinationGrant).
-          - $ref: '#/definitions/GrantToken'
+          - $ref: '#/definitions/DestinationID'
       body:
         allOf:
           - description: Объём средств, которые необходимо вывести
