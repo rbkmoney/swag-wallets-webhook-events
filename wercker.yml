@@ -36,7 +36,7 @@ deploy:
   steps:
     - lordlothar99/git-push:
       gh_oauth: ${GITHUB_API_TOKEN}
-      repo: rbkmoney/swag-wallets-webhook-events-api
+      repo: rbkmoney/wallet-webhook-events-api
       gh_pages: true
       destdir: ${WERCKER_GIT_BRANCH}
   after-steps:
