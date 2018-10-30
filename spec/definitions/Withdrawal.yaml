@@ -1,0 +1,34 @@
+description: Данные вывода денежных средств
+allOf:
+  - type: object
+    required:
+      - wallet
+      - destination
+      - body
+    properties:
+      id:
+        x-rebillyMerge:
+          - $ref: '#/definitions/WithdrawalID'
+      createdAt:
+        description: Дата и время запуска вывода
+        type: string
+        format: date-time
+
+      wallet:
+        x-rebillyMerge:
+          - $ref: '#/definitions/WalletID'
+      destination:
+        x-rebillyMerge:
+          - $ref: '#/definitions/DestinationID'
+      body:
+        x-rebillyMerge:
+          - description: Объём средств, которые необходимо вывести
+          - $ref: '#/definitions/Asset'
+      metadata:
+        description: |
+          Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
+          данным выводом
+        type: object
+        example:
+          notify_email: iliketrains@example.com
+  - $ref: '#/definitions/WithdrawalStatus'
