@@ -17,10 +17,9 @@ properties:
       - Failed
 
   failure:
-    allOf:
-      - description: |
-          > Если `status` == `Failed`
+    - description: |
+         > Если `status` == `Failed`
 
-          Пояснение причины неудачи
+        Пояснение причины неудачи
 
-      - $ref: '#/definitions/WithdrawalFailure'
+    - $ref: '#/definitions/WithdrawalFailure'
