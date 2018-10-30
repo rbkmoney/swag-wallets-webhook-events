@@ -18,7 +18,7 @@ properties:
 
   failure:
     - description: |
-         > Если `status` == `Failed`
+        > Если `status` == `Failed`
 
         Пояснение причины неудачи
 
