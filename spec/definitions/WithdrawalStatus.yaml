@@ -17,9 +17,10 @@ properties:
       - Failed
 
   failure:
-    - description: |
-        > Если `status` == `Failed`
+    x-rebillyMerge:
+      - description: |
+          > Если `status` == `Failed`
 
-        Пояснение причины неудачи
-
-    - $ref: '#/definitions/WithdrawalFailure'
+          Пояснение причины неудачи
+        readOnly: true
+      - $ref: '#/definitions/WithdrawalFailure'
