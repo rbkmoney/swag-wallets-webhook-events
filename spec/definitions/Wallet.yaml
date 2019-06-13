@@ -11,7 +11,7 @@ allOf:
         x-rebillyMerge:
           - $ref: '#/definitions/WalletID'
       createdAt:
-        description: Дата и время запуска ввода
+        description: Дата и время создания кошелька
         type: string
         format: date-time
 

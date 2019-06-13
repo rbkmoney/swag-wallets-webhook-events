@@ -1,4 +1,4 @@
-description: Событие о pаведении нового кошелька
+description: Событие о создании нового кошелька
 allOf:
   - $ref: '#/definitions/Event'
   - type: object
