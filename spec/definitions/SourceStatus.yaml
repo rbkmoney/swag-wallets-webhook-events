@@ -1,0 +1,10 @@
+type: object
+properties:
+  status:
+    description: |
+      Статус источника.
+    type: string
+    enum:
+      - authorized
+      - unauthorized
+

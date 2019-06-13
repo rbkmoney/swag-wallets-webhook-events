@@ -1,0 +1,12 @@
+description: Событие о изменении статусы источника
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - source
+      - status
+    properties:
+      source:
+        $ref: '#/definitions/Source'
+      status:
+        $ref: '#/definitions/SourceStatus'

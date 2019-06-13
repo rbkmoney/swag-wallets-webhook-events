@@ -1,0 +1,9 @@
+description: Событие о неуспешном осуществлении ввода средств
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - deposit
+    properties:
+      deposit:
+        $ref: '#/definitions/Deposit'

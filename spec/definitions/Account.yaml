@@ -1,0 +1,25 @@
+description: Данные счета
+allOf:
+  - type: object
+    required:
+      - currency
+      - identity
+    properties:
+      id:
+        x-rebillyMerge:
+          - $ref: '#/definitions/AccountID'
+      createdAt:
+        description: Дата и время запуска ввода
+        type: string
+        format: date-time
+
+      currency:
+        x-rebillyMerge:
+          - $ref: '#/definitions/CurrencyID'
+      identity:
+        x-rebillyMerge:
+          - $ref: '#/definitions/IdentityID'
+      accountNumber:
+        x-rebillyMerge:
+          - $ref: '#/definitions/AccountNumber'
+

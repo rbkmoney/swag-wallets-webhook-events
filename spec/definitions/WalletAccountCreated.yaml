@@ -1,0 +1,12 @@
+description: Событие о привязке нового счета
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - account
+      - wallet
+    properties:
+      account:
+        $ref: '#/definitions/Account'
+      wallet:
+        $ref: '#/definitions/Wallet'

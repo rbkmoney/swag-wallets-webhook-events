@@ -1,32 +1,32 @@
-description: Данные вывода денежных средств
+description: Данные ввода денежных средств
 allOf:
   - type: object
     required:
       - wallet
-      - destination
+      - source
       - body
     properties:
       id:
         x-rebillyMerge:
-          - $ref: '#/definitions/WithdrawalID'
+          - $ref: '#/definitions/DepositID'
       createdAt:
-        description: Дата и время запуска вывода
+        description: Дата и время запуска ввода
         type: string
         format: date-time
 
       wallet:
         x-rebillyMerge:
           - $ref: '#/definitions/WalletID'
-      destination:
+      source:
         x-rebillyMerge:
-          - $ref: '#/definitions/DestinationID'
+          - $ref: '#/definitions/SourceID'
       body:
         x-rebillyMerge:
-          - description: Объём средств, которые необходимо вывести
+          - description: Объём средств, которые необходимо ввести
           - $ref: '#/definitions/Asset'
       metadata:
         description: |
           Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
           данным выводом
         type: object
-  - $ref: '#/definitions/WithdrawalStatus'
+  - $ref: '#/definitions/DepositStatus'

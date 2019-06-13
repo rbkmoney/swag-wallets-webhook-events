@@ -1,0 +1,18 @@
+description: Данные источника
+allOf:
+  - type: object
+    required:
+      - name
+    properties:
+      name:
+        x-rebillyMerge:
+          - $ref: '#/definitions/SourceName'
+      createdAt:
+        description: Дата и время создания источника
+        type: string
+        format: date-time
+
+      resourceInternalDetails:
+        x-rebillyMerge:
+          - $ref: '#/definitions/SourceName'
+

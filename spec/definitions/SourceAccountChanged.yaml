@@ -1,0 +1,12 @@
+description: Событие о изменении счета
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - account
+      - source
+    properties:
+      account:
+        $ref: '#/definitions/Account'
+      source:
+        $ref: '#/definitions/Source'
