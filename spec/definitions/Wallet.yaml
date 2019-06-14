@@ -2,7 +2,6 @@ description: Данные кошелька
 allOf:
   - type: object
     required:
-      - wallet
       - name
       - currency
       - identity

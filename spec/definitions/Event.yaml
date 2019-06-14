@@ -2,7 +2,6 @@ description: Данные события
 type: object
 discriminator: eventType
 required:
-  - eventID
   - occuredAt
   - topic
   - eventType
@@ -35,4 +34,5 @@ properties:
       - WalletAccountCreated
       - SourceCreated
       - SourceAccountChanged
-      - SourceStatusChanged
+      - SourceStatusAuthorized
+      - SourceStatusUnauthorized
