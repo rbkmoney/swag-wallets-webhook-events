@@ -8,7 +8,7 @@ required:
 properties:
   eventID:
     description: Идентификатор события в системе
-    type: integer
+    type: string
   occuredAt:
     description: Дата и время возникновения события
     type: string
@@ -26,9 +26,9 @@ properties:
     type: string
     description: Тип произошедшего с предметом оповещения события
     enum:
-      - WalletWithdrawalStarted
-      - WalletWithdrawalSucceeded
-      - WalletWithdrawalFailed
+      - WithdrawalStarted
+      - WithdrawalSucceeded
+      - WithdrawalFailed
       - DepositStarted
       - DepositSucceeded
       - DepositFailed
@@ -36,8 +36,8 @@ properties:
       - WalletAccountCreated
       - SourceCreated
       - SourceAccountChanged
-      - SourceStatusAuthorized
-      - SourceStatusUnauthorized
+      - SourceAuthorized
+      - SourceUnauthorized
       - DestinationCreated
       - DestinationAccountChanged
       - DestinationAuthorized
