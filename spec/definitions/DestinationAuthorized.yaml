@@ -1,4 +1,4 @@
-description: Смена статуса на авторизованный для места назначения денежных средств
+description: Смена статуса приемника на авторизованный
 allOf:
   - $ref: '#/definitions/Event'
   - type: object

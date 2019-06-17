@@ -1,31 +1,27 @@
 description: Данные кошелька
-allOf:
-  - type: object
-    required:
-      - name
-      - currency
-      - identity
-    properties:
-      id:
-        x-rebillyMerge:
-          - $ref: '#/definitions/WalletID'
-      createdAt:
-        description: Дата и время создания кошелька
-        type: string
-        format: date-time
-
-      name:
-        x-rebillyMerge:
-          - $ref: '#/definitions/WalletName'
-      currency:
-        x-rebillyMerge:
-          - $ref: '#/definitions/CurrencyID'
-      identity:
-        x-rebillyMerge:
-          - $ref: '#/definitions/IdentityID'
-      metadata:
-        description: |
-          Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
-          данным выводом
-        type: object
-  - $ref: '#/definitions/DepositStatus'
+type: object
+required:
+  - name
+  - currency
+  - identity
+properties:
+  id:
+    x-rebillyMerge:
+      - $ref: '#/definitions/WalletID'
+  createdAt:
+    description: Дата и время создания кошелька
+    type: string
+    format: date-time
+  name:
+    x-rebillyMerge:
+      - $ref: '#/definitions/WalletName'
+  currency:
+    x-rebillyMerge:
+      - $ref: '#/definitions/CurrencyID'
+  identity:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityID'
+  metadata:
+    description: |
+      Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
+      данным выводом

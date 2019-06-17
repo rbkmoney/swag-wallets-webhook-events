@@ -3,5 +3,5 @@ required:
   - code
 properties:
   code:
-    description: Код ошибки ввода
+    description: Код ошибки пополнения
     type: string

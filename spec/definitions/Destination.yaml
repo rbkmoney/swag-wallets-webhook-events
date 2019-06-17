@@ -1,20 +1,19 @@
-description: Данные места назначения денежных средств
+description: Данные приемника денежных средств
 discriminator: resourceType
-allOf:
-  - type: object
-    required:
-      - id
-      - name
-      - resourceType
-    properties:
-      id:
-        x-rebillyMerge:
-          - $ref: '#/definitions/DestinationID'
-      name:
-        x-rebillyMerge:
-          - $ref: '#/definitions/DestinationName'
-      resourceType:
-        type: string
-        description: Тип платежного ресурса
-        enum:
-          - BankCard
+type: object
+required:
+  - id
+  - name
+  - resourceType
+properties:
+  id:
+    x-rebillyMerge:
+      - $ref: '#/definitions/DestinationID'
+  name:
+    x-rebillyMerge:
+      - $ref: '#/definitions/DestinationName'
+  resourceType:
+    type: string
+    description: Тип платежного ресурса
+    enum:
+      - BankCard

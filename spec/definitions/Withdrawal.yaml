@@ -1,5 +1,6 @@
 description: Данные вывода денежных средств
 allOf:
+  - $ref: '#/definitions/WithdrawalStatus'
   - type: object
     required:
       - wallet
@@ -28,5 +29,3 @@ allOf:
         description: |
           Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
           данным выводом
-        type: object
-  - $ref: '#/definitions/WithdrawalStatus'

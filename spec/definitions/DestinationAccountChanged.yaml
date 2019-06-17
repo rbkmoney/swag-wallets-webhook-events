@@ -1,4 +1,4 @@
-description: Данные по изменеию счета для места назначения денежных средств
+description: Событие изменения счета для приемника денежных средств
 allOf:
   - $ref: '#/definitions/Event'
   - type: object

@@ -1,4 +1,4 @@
-description: Событие о старте ввода средств
+description: Событие начала пополнения
 allOf:
   - $ref: '#/definitions/Event'
   - type: object

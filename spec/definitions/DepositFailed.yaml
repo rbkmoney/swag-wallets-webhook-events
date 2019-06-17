@@ -1,4 +1,4 @@
-description: Событие о неуспешном осуществлении ввода средств
+description: Собтыие неуспешного пополнения
 allOf:
   - $ref: '#/definitions/Event'
   - type: object

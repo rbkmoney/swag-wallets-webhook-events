@@ -1,5 +1,6 @@
-description: Данные ввода денежных средств
+description: Данные пополнения денежных средств
 allOf:
+  - $ref: '#/definitions/DepositStatus'
   - type: object
     required:
       - wallet
@@ -27,6 +28,5 @@ allOf:
       metadata:
         description: |
           Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
-          данным выводом
+          данным пополнением
         type: object
-  - $ref: '#/definitions/DepositStatus'

@@ -1,4 +1,4 @@
-description: Событие о создании места вывода
+description: Событие создания приемника денежных средств
 allOf:
   - $ref: '#/definitions/Event'
   - type: object
