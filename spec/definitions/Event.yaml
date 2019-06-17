@@ -19,8 +19,9 @@ properties:
     enum:
       - WalletsTopic
       - DepositTopic
-      - IdentityTopic
+      - WithdrawalTopic
       - SourceTopic
+      - DestinationTopic
   eventType:
     type: string
     description: Тип произошедшего с предметом оповещения события
@@ -29,6 +30,7 @@ properties:
       - WalletWithdrawalSucceeded
       - WalletWithdrawalFailed
       - DepositStarted
+      - DepositSucceeded
       - DepositFailed
       - WalletCreated
       - WalletAccountCreated
@@ -36,3 +38,7 @@ properties:
       - SourceAccountChanged
       - SourceStatusAuthorized
       - SourceStatusUnauthorized
+      - DestinationCreated
+      - DestinationAccountChanged
+      - DestinationAuthorized
+      - DestinationUnauthorized

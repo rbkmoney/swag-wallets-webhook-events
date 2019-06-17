@@ -4,9 +4,10 @@ allOf:
   - type: object
     required:
       - account
-      - source
+      - sourceID
     properties:
       account:
         $ref: '#/definitions/Account'
-      source:
-        $ref: '#/definitions/Source'
+      sourceID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/SourceID'

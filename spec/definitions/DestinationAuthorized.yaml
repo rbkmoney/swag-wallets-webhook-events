@@ -1,0 +1,10 @@
+description: Смена статуса на авторизованный для места назначения денежных средств
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - destinationID
+    properties:
+      destinationID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/DestinationID'

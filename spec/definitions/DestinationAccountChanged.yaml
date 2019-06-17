@@ -1,0 +1,12 @@
+description: Данные по изменеию счета для места назначения денежных средств
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - destinationID
+    properties:
+      account:
+        $ref: '#/definitions/Account'
+      destinationID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/DestinationID'

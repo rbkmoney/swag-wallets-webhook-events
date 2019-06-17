@@ -3,7 +3,8 @@ allOf:
   - $ref: '#/definitions/Event'
   - type: object
     required:
-      - source
+      - sourceID
     properties:
-      source:
-        $ref: '#/definitions/Source'
+      sourceID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/SourceID'

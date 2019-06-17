@@ -1,0 +1,9 @@
+description: Событие о создании места вывода
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - destination
+    properties:
+      destination:
+        $ref: '#/definitions/Destination'

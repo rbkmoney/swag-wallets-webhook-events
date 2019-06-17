@@ -3,7 +3,8 @@ allOf:
   - $ref: '#/definitions/Event'
   - type: object
     required:
-      - withdrawal
+      - withdrawalID
     properties:
-      withdrawal:
-        $ref: '#/definitions/Withdrawal'
+      withdrawalID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/WithdrawalID'

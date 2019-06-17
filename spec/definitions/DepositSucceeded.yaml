@@ -3,7 +3,8 @@ allOf:
   - $ref: '#/definitions/Event'
   - type: object
     required:
-      - deposit
+      - depositID
     properties:
-      deposit:
-        $ref: '#/definitions/Deposit'
+      depositID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/DepositID'

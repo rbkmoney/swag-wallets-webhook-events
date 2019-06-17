@@ -4,9 +4,10 @@ allOf:
   - type: object
     required:
       - account
-      - wallet
+      - walletId
     properties:
       account:
         $ref: '#/definitions/Account'
-      wallet:
-        $ref: '#/definitions/Wallet'
+      walletId:
+        x-rebillyMerge:
+          - $ref: '#/definitions/WalletID'

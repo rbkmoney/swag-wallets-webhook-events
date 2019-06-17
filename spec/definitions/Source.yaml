@@ -4,6 +4,9 @@ allOf:
     required:
       - name
     properties:
+      id:
+        x-rebillyMerge:
+          - $ref: '#/definitions/SourceID'
       name:
         x-rebillyMerge:
           - $ref: '#/definitions/SourceName'
