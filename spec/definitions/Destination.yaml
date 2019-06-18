@@ -17,3 +17,4 @@ properties:
     description: Тип платежного ресурса
     enum:
       - BankCard
+      - CryptoWallet
