@@ -38,6 +38,5 @@ properties:
       - SourceAuthorized
       - SourceUnauthorized
       - DestinationCreated
-      - DestinationAccountChanged
       - DestinationAuthorized
       - DestinationUnauthorized

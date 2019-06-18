@@ -3,7 +3,7 @@ allOf:
   - $ref: '#/definitions/Destination'
   - type: object
     required:
-      - id
+      - cryptoWalletId
       - currency
     properties:
       cryptoWalletId:
