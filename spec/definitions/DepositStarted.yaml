@@ -1,9 +1,0 @@
-description: Событие начала пополнения
-allOf:
-  - $ref: '#/definitions/Event'
-  - type: object
-    required:
-      - deposit
-    properties:
-      deposit:
-        $ref: '#/definitions/Deposit'

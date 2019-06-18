@@ -1,9 +1,0 @@
-description: Событие о создании источника
-allOf:
-  - $ref: '#/definitions/Event'
-  - type: object
-    required:
-      - source
-    properties:
-      source:
-        $ref: '#/definitions/Source'
