@@ -33,7 +33,6 @@ properties:
       - DepositSucceeded
       - DepositFailed
       - WalletCreated
-      - WalletAccountCreated
       - SourceCreated
       - SourceAccountChanged
       - SourceAuthorized

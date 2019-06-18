@@ -20,7 +20,7 @@ info:
     Webhook — это подписка на определенный тип события либо их группу,
     касающихся различных объектов в рамках вашей организации. Для управления
     webhook'ами используются методы RBKmoney API, описанные в спецификации
-    [RBKmoney Webhooks Management API](https://rbkmoney.github.io/api#Webhooks).
+    [RBKmoney Webhooks Management API](https://rbkmoney.github.io/wallets-api#Webhooks).
     Когда наступает одно из событий в рамках определенного кошелька (например,
     изменение статуса кошелька), платформа выбирает
     webhook, подходящий под этот тип события, и отправляет HTTP-запрос,

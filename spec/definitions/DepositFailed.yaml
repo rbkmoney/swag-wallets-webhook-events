@@ -8,3 +8,8 @@ allOf:
       depositID:
         x-rebillyMerge:
           - $ref: '#/definitions/DepositID'
+      failure:
+        x-rebillyMerge:
+          - description: Пояснение причины неудачи
+            readOnly: true
+          - $ref: '#/definitions/DepositFailure'
