@@ -1,20 +1,35 @@
 description: Данные приемника денежных средств
-discriminator: resourceType
 type: object
 required:
-  - id
   - name
-  - resourceType
+  - identity
+  - currency
+  - resource
 properties:
   id:
     x-rebillyMerge:
       - $ref: '#/definitions/DestinationID'
+      - readOnly: true
   name:
-    x-rebillyMerge:
-      - $ref: '#/definitions/DestinationName'
-  resourceType:
+    description: |
+      Человекочитаемое название приёмника средств, по которому его легко узнать
     type: string
-    description: Тип платежного ресурса
-    enum:
-      - BankCard
-      - CryptoWallet
+    example: Squarey plastic thingy
+  identity:
+    x-rebillyMerge:
+      - $ref: '#/definitions/IdentityID'
+  currency:
+    x-rebillyMerge:
+      - $ref: '#/definitions/CurrencyID'
+  resource:
+    $ref: '#/definitions/DestinationResource'
+  metadata:
+    description: |
+      Произвольный, специфичный для клиента API и непрозрачный для системы набор данных, ассоциированных с
+      данным приёмником
+    type: object
+    example:
+      color_hint: olive-green
+  externalID:
+    x-rebillyMerge:
+      - $ref: '#/definitions/ExternalID'
