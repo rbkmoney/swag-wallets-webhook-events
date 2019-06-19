@@ -1,0 +1,10 @@
+description: Событие об успешном осуществлении вывода средств
+allOf:
+  - $ref: '#/definitions/Event'
+  - type: object
+    required:
+      - withdrawalID
+    properties:
+      withdrawalID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/WithdrawalID'
