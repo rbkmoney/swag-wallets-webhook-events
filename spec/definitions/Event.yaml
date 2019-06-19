@@ -18,9 +18,7 @@ properties:
     type: string
     enum:
       - WalletsTopic
-      - DepositTopic
       - WithdrawalTopic
-      - SourceTopic
       - DestinationTopic
   eventType:
     type: string
