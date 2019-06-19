@@ -17,7 +17,6 @@ properties:
     description: Предмет оповещения
     type: string
     enum:
-      - WalletsTopic
       - WithdrawalTopic
       - DestinationTopic
   eventType:
@@ -27,7 +26,6 @@ properties:
       - WithdrawalStarted
       - WithdrawalSucceeded
       - WithdrawalFailed
-      - WalletCreated
       - DestinationCreated
       - DestinationAuthorized
       - DestinationUnauthorized

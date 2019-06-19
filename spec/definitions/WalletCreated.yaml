@@ -1,9 +1,0 @@
-description: Событие о создании нового кошелька
-allOf:
-  - $ref: '#/definitions/Event'
-  - type: object
-    required:
-      - wallet
-    properties:
-      wallet:
-        $ref: '#/definitions/Wallet'
