@@ -34,11 +34,9 @@ release:
 
 deploy:
   steps:
-    - lordlothar99/git-push:
-      gh_oauth: ${GITHUB_API_TOKEN}
+    - lukevivier/gh-pages:
       repo: rbkmoney/wallet-webhook-events-api
-      gh_pages: true
-      destdir: ${WERCKER_GIT_BRANCH}
+      token: ${GITHUB_API_TOKEN}
   after-steps:
     - slack-notifier:
       url: ${SLACK_WEBHOOK_URL}
