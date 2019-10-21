@@ -26,3 +26,6 @@ properties:
   wallet:
     x-rebillyMerge:
       - $ref: '#/definitions/WalletID'
+  externalID:
+    x-rebillyMerge:
+      - $ref: '#/definitions/ExternalID'
