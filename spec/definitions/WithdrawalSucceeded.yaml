@@ -8,3 +8,6 @@ allOf:
       withdrawalID:
         x-rebillyMerge:
           - $ref: '#/definitions/WithdrawalID'
+      externalID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/ExternalID'
