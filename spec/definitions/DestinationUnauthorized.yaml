@@ -8,3 +8,6 @@ allOf:
       destinationID:
         x-rebillyMerge:
           - $ref: '#/definitions/DestinationID'
+      externalID:
+        x-rebillyMerge:
+          - $ref: '#/definitions/ExternalID'
