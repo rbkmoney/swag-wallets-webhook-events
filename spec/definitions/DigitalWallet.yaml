@@ -13,6 +13,9 @@ allOf:
         maxLength: 256
         example: zu3TcwGI71Bpaaw2XkLWZXlhMdn4zpVzMQ
       digitalWalletProvider:
-        description: Идентификатор
+        description: |
+          Идентификатор провайдера
         type: string
-        example: webmoney
+        enum:
+          - webmoney
+
